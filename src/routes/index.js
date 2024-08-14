@@ -12,9 +12,17 @@ import ForgetPwd from "../pages/Authentication/ForgetPassword";
 
 // Dashboard
 import Dashboard from "../pages/Dashboard/index";
+import Site from "pages/Site";
+import Domain from "pages/Domain";
+import Quiz from "pages/Quiz";
+import Config from "pages/Config";
 
 const authProtectedRoutes = [
   { path: "/dashboard", component: <Dashboard /> },
+  { path: "/site", component: <Site /> },
+  { path: "/domain", component: <Domain /> },
+  { path: "/quiz", component: <Quiz /> },
+  { path: "/config", component: <Config /> },
   // //profile
   { path: "/profile", component: <UserProfile /> },
 

@@ -145,6 +145,31 @@ const SidebarContent = props => {
       <SimpleBar className="h-100" ref={ref}>
         <div id="sidebar-menu">
           <ul className="metismenu list-unstyled" id="side-menu">
+            <li className="menu-title">{props.t("Admin")} </li>
+            <li>
+              <Link to="/site" >
+              <i className='bx bx-globe'/>
+                <span>{props.t("Site")}</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/domain" >
+              <i className='bx bxs-webcam' />
+                <span>{props.t("Domain")}</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/quiz" >
+              <i className='bx bx-question-mark' />
+                <span>{props.t("Quiz")}</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/config" >
+              <i className='bx bx-cabinet' />
+                <span>{props.t("Config")}</span>
+              </Link>
+            </li>
             <li className="menu-title">{props.t("Menu")} </li>
             <li>
               <Link to="/#" className="has-arrow">

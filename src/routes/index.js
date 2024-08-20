@@ -13,16 +13,30 @@ import ForgetPwd from "../pages/Authentication/ForgetPassword";
 // Dashboard
 import Dashboard from "../pages/Dashboard/index";
 import Site from "pages/Site";
-import Domain from "pages/Domain";
+import Vertical from "pages/Vertical";
 import Quiz from "pages/Quiz";
 import Config from "pages/Config";
+import DomainSetting from "pages/DomainSetting";
+import AddDomain from "pages/DomainSetting/AddDomain";
+import User from "pages/User";
+import Role from "pages/Role";
+import AddUser from "pages/User/AddUser";
+import AddVertical from "pages/Vertical/AddVertical";
+import AddQuiz from "pages/Quiz/AddQuiz";
 
 const authProtectedRoutes = [
   { path: "/dashboard", component: <Dashboard /> },
   { path: "/site", component: <Site /> },
-  { path: "/domain", component: <Domain /> },
+  { path: "/vertical", component: <Vertical /> },
+  { path: "/vertical/add-vertical", component: <AddVertical /> },
   { path: "/quiz", component: <Quiz /> },
+  { path: "/quiz/add-quiz", component: <AddQuiz /> },
   { path: "/config", component: <Config /> },
+  { path: "/domain-setting", component: <DomainSetting /> },
+  { path: "/domain-setting/add-domain", component: <AddDomain /> },
+  { path: "/user", component: <User /> },
+  { path: "/user/add-user", component: <AddUser /> },
+  { path: "/role", component: <Role /> },
   // //profile
   { path: "/profile", component: <UserProfile /> },
 

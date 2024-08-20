@@ -147,16 +147,35 @@ const SidebarContent = props => {
           <ul className="metismenu list-unstyled" id="side-menu">
             <li className="menu-title">{props.t("Admin")} </li>
             <li>
-              <Link to="/site" >
-              <i className='bx bx-globe'/>
-                <span>{props.t("Site")}</span>
-              </Link>
-            </li>
-            <li>
-              <Link to="/domain" >
-              <i className='bx bxs-webcam' />
+              <Link to="/#" className="has-arrow">
+                <i className="bx bx-home-circle"></i>
                 <span>{props.t("Domain")}</span>
               </Link>
+              <ul className="sub-menu">
+                <li>
+                  <Link to="/Site">{props.t("Site")}</Link>
+                </li>
+                <li>
+                  <Link to="/vertical">{props.t("Vertical")}</Link>
+                </li>
+                <li>
+                  <Link to="/domain-setting">{props.t("Domain Setting")}</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/#" className="has-arrow">
+                <i className="bx bx-home-circle"></i>
+                <span>{props.t("User")}</span>
+              </Link>
+              <ul className="sub-menu">
+                <li>
+                  <Link to="/user">{props.t("User")}</Link>
+                </li>
+                <li>
+                  <Link to="/role">{props.t("Role")}</Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link to="/quiz" >

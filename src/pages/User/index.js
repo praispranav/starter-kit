@@ -10,11 +10,11 @@ import Breadcrumbs from "../../components/Common/Breadcrumb";
 
 //i18n
 import { withTranslation } from "react-i18next";
-import ContentHeader from "components/Common/ContentHeader";
+import ContentHeader from "../../components/Common/ContentHeader";
 
-const Quiz = props => {
+const User = props => {
   //meta title
-  document.title = "Quiz | Skote - React Admin & Quiz Template";
+  document.title = "Domain Setting | Skote - React Admin & Domain Setting Template";
 
   return (
     <React.Fragment>
@@ -22,20 +22,20 @@ const Quiz = props => {
         <Container fluid>
           {/* Render Breadcrumb */}
           <Breadcrumbs
-            title={props.t("Quiz")}
-            breadcrumbItem={props.t("Quiz")}
+            title={props.t("User")}
+            breadcrumbItem={props.t("User")}
           />
-          <ContentHeader route={"add-quiz"} addNew={"Quiz"} />
+          <ContentHeader route={"add-user"} addNew={"User"} />
         </Container>
       </div>
     </React.Fragment>
   );
 };
 
-Quiz.propTypes = {
+User.propTypes = {
   t: PropTypes.any,
   chartsData: PropTypes.any,
   onGetChartsData: PropTypes.func,
 };
 
-export default withTranslation()(Quiz);
+export default withTranslation()(User);

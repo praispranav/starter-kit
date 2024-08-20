@@ -10,10 +10,11 @@ import Breadcrumbs from "../../components/Common/Breadcrumb";
 
 //i18n
 import { withTranslation } from "react-i18next";
+import ContentHeader from "../../components/Common/ContentHeader";
 
-const Domain = props => {
+const DomainSetting = props => {
   //meta title
-  document.title = "Domain | Skote - React Admin & Domain Template";
+  document.title = "Domain Setting | Skote - React Admin & Domain Setting Template";
 
   return (
     <React.Fragment>
@@ -21,19 +22,20 @@ const Domain = props => {
         <Container fluid>
           {/* Render Breadcrumb */}
           <Breadcrumbs
-            title={props.t("Domains")}
-            breadcrumbItem={props.t("Domain")}
+            title={props.t("Domain Settings")}
+            breadcrumbItem={props.t("Domain Setting")}
           />
+          <ContentHeader route={"add-domain"} addNew={"Domain Setting"} />
         </Container>
       </div>
     </React.Fragment>
   );
 };
 
-Domain.propTypes = {
+DomainSetting.propTypes = {
   t: PropTypes.any,
   chartsData: PropTypes.any,
   onGetChartsData: PropTypes.func,
 };
 
-export default withTranslation()(Domain);
+export default withTranslation()(DomainSetting);

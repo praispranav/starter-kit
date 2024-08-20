@@ -11,7 +11,7 @@ import Breadcrumbs from "../../components/Common/Breadcrumb";
 //i18n
 import { withTranslation } from "react-i18next";
 
-const Config = props => {
+const Theme = props => {
   //meta title
   document.title = "Config | Skote - React Admin & Config Template";
 
@@ -21,8 +21,8 @@ const Config = props => {
         <Container fluid>
           {/* Render Breadcrumb */}
           <Breadcrumbs
-            title={props.t("Configs")}
-            breadcrumbItem={props.t("Config")}
+            title={props.t("Theme")}
+            breadcrumbItem={props.t("Theme")}
           />
         </Container>
       </div>
@@ -30,10 +30,10 @@ const Config = props => {
   );
 };
 
-Config.propTypes = {
+Theme.propTypes = {
   t: PropTypes.any,
   chartsData: PropTypes.any,
   onGetChartsData: PropTypes.func,
 };
 
-export default withTranslation()(Config);
+export default withTranslation()(Theme);

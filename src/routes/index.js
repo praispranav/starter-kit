@@ -15,7 +15,6 @@ import Dashboard from "../pages/Dashboard/index";
 import Site from "pages/Site";
 import Vertical from "pages/Vertical";
 import Quiz from "pages/Quiz";
-import Config from "pages/Config";
 import DomainSetting from "pages/DomainSetting";
 import AddDomain from "pages/DomainSetting/AddDomain";
 import User from "pages/User";
@@ -23,6 +22,7 @@ import Role from "pages/Role";
 import AddUser from "pages/User/AddUser";
 import AddVertical from "pages/Vertical/AddVertical";
 import AddQuiz from "pages/Quiz/AddQuiz";
+import Theme from "pages/Theme";
 
 const authProtectedRoutes = [
   { path: "/dashboard", component: <Dashboard /> },
@@ -31,7 +31,7 @@ const authProtectedRoutes = [
   { path: "/vertical/add-vertical", component: <AddVertical /> },
   { path: "/quiz", component: <Quiz /> },
   { path: "/quiz/add-quiz", component: <AddQuiz /> },
-  { path: "/config", component: <Config /> },
+  { path: "/theme", component: <Theme /> },
   { path: "/domain-setting", component: <DomainSetting /> },
   { path: "/domain-setting/add-domain", component: <AddDomain /> },
   { path: "/user", component: <User /> },
